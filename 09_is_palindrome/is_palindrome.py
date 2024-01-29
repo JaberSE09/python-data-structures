@@ -1,5 +1,8 @@
 def is_palindrome(phrase):
-    """Is phrase a palindrome?
+    normalized = phrase.lower().replace(' ', '')
+    return normalized == normalized[::-1]
+    
+"""Is phrase a palindrome?
 
     Return True/False if phrase is a palindrome (same read backwards and
     forwards).
@@ -20,4 +23,11 @@ def is_palindrome(phrase):
 
         >>> is_palindrome('Noon')
         True
-    """
+"""
+
+
+print(is_palindrome('tacocat'))
+print(is_palindrome('noon'))
+print(is_palindrome('robert'))
+print(is_palindrome('taco cat'))
+print(is_palindrome('Noon'))
