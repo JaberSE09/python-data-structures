@@ -1,4 +1,20 @@
 def calculate(operation, a, b, make_int=False, message='The result is'):
+    if operation == "add":
+            res = a + b
+    elif operation == "subtract":
+        res = a - b
+    elif operation == "multiply":
+        res = a * b
+    elif operation == "divide":
+        res = a / b
+    else:
+        return
+
+    if make_int:
+        res = int(res)
+
+    return print(f"{message} {res}")
+
     """Perform operation on a + b, ()possibly truncating) & returning w/msg.
 
     - operation: 'add', 'subtract', 'multiply', or 'divide'
@@ -26,3 +42,5 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         >>> calculate('foo', 2, 3)
         
     """
+calculate('divide', 10, 4, message='I got')
+calculate('foo', 2, 3)
