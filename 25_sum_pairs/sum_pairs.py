@@ -1,5 +1,18 @@
 def sum_pairs(nums, goal):
-    """Return tuple of first pair of nums that sum to goal.
+    visited = set()
+    
+    for i in nums:
+        difference = goal - i
+        
+        if difference in visited:
+            return print((difference ,  i))
+        visited.add(i)
+        
+    return print(())
+    
+    
+    
+"""Return tuple of first pair of nums that sum to goal.
 
     For example:
 
@@ -21,3 +34,4 @@ def sum_pairs(nums, goal):
         >>> sum_pairs([11, 20, 4, 2, 1, 5], 100)
         ()
     """
+sum_pairs([1, 2, 2, 10], 4)
