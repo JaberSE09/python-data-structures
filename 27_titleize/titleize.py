@@ -1,4 +1,5 @@
 def titleize(phrase):
+    return print(phrase.title())
     """Return phrase in title case (each word capitalized).
 
         >>> titleize('this is awesome')
@@ -7,3 +8,4 @@ def titleize(phrase):
         >>> titleize('oNLy cAPITALIZe fIRSt')
         'Only Capitalize First'
     """
+titleize('this is awesome')
