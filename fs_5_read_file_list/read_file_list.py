@@ -1,4 +1,10 @@
 def read_file_list(filename):
+    with open(filename) as f:
+        for line in f:
+            # remove newline at end of line!
+            line = line.strip()
+            print(f"- {line}")
+
     """Read file and print out each line separately with a "-" before it.
 
     For example, if we have a file, `dogs`, containing:
@@ -19,3 +25,5 @@ def read_file_list(filename):
     # hint: when you read lines of files, there will be a "newline"
     # (end-of-line character) at the end of each line, and you want to
     # strip that off before you print it. Do some research on that!
+    
+read_file_list("dogs")

@@ -1,4 +1,10 @@
 def is_odd_string(word):
+    DIFF = ord("a") - 1
+
+    total = sum((ord(c) - DIFF) for c in word.lower())
+
+    return print(total % 2 == 1)
+
     """Is the sum of the character-positions odd?
 
     Word is a simple word of uppercase/lowercase letters without punctuation.
@@ -29,3 +35,4 @@ def is_odd_string(word):
     """
 
     # Hint: you may find the ord() function useful here
+is_odd_string('a')

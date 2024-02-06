@@ -1,4 +1,6 @@
 def sum_up_diagonals(matrix):
+    return print(sum([matrix[i][i] + matrix[i][-1 - i] for i in range(len(matrix))]))
+    
     """Given a matrix [square list of lists], return sum of diagonals.
 
     Sum of TL-to-BR diagonal along with BL-to-TR diagonal:
@@ -18,3 +20,6 @@ def sum_up_diagonals(matrix):
         >>> sum_up_diagonals(m2)
         30
     """
+    
+m1 = [[1,   2],[30, 40],]
+sum_up_diagonals(m1)
