@@ -1,5 +1,12 @@
 def repeat(phrase, num):
-    """Return phrase, repeated num times.
+    repeated=""
+    if num is not is
+    while num > 0:
+        repeated+=phrase
+        num= num-1
+    return print(repeated)
+    
+"""Return phrase, repeated num times.
 
         >>> repeat('*', 3)
         '***'
@@ -18,3 +25,6 @@ def repeat(phrase, num):
         >>> repeat('abc', 'nope') is None
         True
     """
+
+repeat('*', 3)
+repeat('abc', 'nope')

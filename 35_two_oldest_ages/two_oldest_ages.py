@@ -1,4 +1,7 @@
 def two_oldest_ages(ages):
+    uniq_ages = set(ages)
+    oldest = sorted(uniq_ages)[-2:]
+    return print(tuple(oldest))
     """Return two distinct oldest ages as tuple (second-oldest, oldest)..
 
         >>> two_oldest_ages([1, 2, 10, 8])
@@ -21,3 +24,5 @@ def two_oldest_ages(ages):
     # you may find it helpful to research the `sorted(iter)` function, which
     # can take *any* type of list-like-thing, and returns a new, sorted list
     # from it.
+    
+two_oldest_ages([1, 2, 10, 8])
